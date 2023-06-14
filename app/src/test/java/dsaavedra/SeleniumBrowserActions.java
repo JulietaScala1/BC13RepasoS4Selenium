@@ -1,4 +1,4 @@
-package jscala;
+package dsaavedra;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
@@ -10,29 +10,33 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.SQLOutput;
+import java.util.concurrent.TimeUnit;
 
 public class SeleniumBrowserActions {
 
     private String titulo;
-
     private WebDriver driver;
 
     @BeforeEach
-    void preparacionTests() {
-        //preparas el webdriver
+    void preparacionTests(){
+        //preparar el webdriver
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver(); //Instanciar un objeto WebDriver (browser)
+        driver = new ChromeDriver(); //instanciar un objeto WebDriver (browser)
+
+
+        //administrar los tiempos de respuesta de carga de pagina
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @AfterEach
-    void posEjecucion() {
-        driver.close();
+    void posEjecucion(){
+        //driver.close();
     }
-    @Test
-    void browserActions() {
 
+    @Test
+    void browserActions(){
         //cargar una pagina
         driver.get("https://www.google.cl");
 
@@ -57,6 +61,7 @@ public class SeleniumBrowserActions {
         titulo = driver.getTitle();
         System.out.println("El titulo del sitio es: "+titulo);
     }
+
 
     @Test
     void validarPaginaIniciarSesionSpotify(){
