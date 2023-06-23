@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BC13RepasoS4Selenium.iml" filepath="$PROJECT_DIR$/.idea/BC13RepasoS4Selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BC13RepasoS4Selenium.iml" filepath="$PROJECT_DIR$/.idea/modules/BC13RepasoS4Selenium.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BC13RepasoS4Selenium.app.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IdeaProjects.BC13RepasoS4Selenium.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IdeaProjects.BC13RepasoS4Selenium.app.test.iml" />
     </modules>
   </component>
 </project>
